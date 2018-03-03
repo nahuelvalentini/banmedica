@@ -1,0 +1,29 @@
+.input-comp-1-cont-general {
+    .input-comp-1-cont {
+        .input-1-cont {
+            .label-input-1 {
+                top: 0px;
+                left: 0px;  
+                pointer-events: none;
+                @keyframes onfocus {
+                    from {transform:translateY(0px) scale(1,1);}
+                    to {transform:translateY(-12px) translateX(-2px) scale(0.8,0.8);}
+                }
+                &.onfocus {
+                    animation-name: onfocus;
+                    animation-duration: 300ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .input-1 {
+                background-color: transparent;
+                -webkit-appearance: none;
+                padding: 0px;
+                border-width: 1px;
+                border-style: none;
+                outline: none;
+                outline-offset: 0px;
+            }
+        }
+    }
+}

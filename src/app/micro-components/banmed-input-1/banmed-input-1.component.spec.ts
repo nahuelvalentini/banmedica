@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BanmedInputComponent } from './banmed-input.component';
+import { BanmedInput1Component } from './banmed-input-1.component';
 
-describe('BanmedInputComponent', () => {
-  let component: BanmedInputComponent;
-  let fixture: ComponentFixture<BanmedInputComponent>;
+describe('BanmedInput1Component', () => {
+  let component: BanmedInput1Component;
+  let fixture: ComponentFixture<BanmedInput1Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BanmedInputComponent ]
+      declarations: [ BanmedInput1Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BanmedInputComponent);
+    fixture = TestBed.createComponent(BanmedInput1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

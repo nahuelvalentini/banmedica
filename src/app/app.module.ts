@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { StepsComponent } from './components/steps/steps.component';
 import { LogoComponent } from './micro-components/logo/logo.component';
-import { BanmedInputComponent } from './micro-components/banmed-input/banmed-input.component';
+import { BanmedInput1Component } from './micro-components/banmed-input-1/banmed-input-1.component';
 
 const appRoutes: Routes = [
   // { path: 'home', component: HomeComponent },
@@ -32,14 +33,15 @@ const appRoutes: Routes = [
     HomeComponent,
     StepsComponent,
     LogoComponent,
-    BanmedInputComponent
+    BanmedInput1Component
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
       // { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
