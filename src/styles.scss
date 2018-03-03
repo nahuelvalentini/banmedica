@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './helpers';
+
+@font-face {
+    font-family: 'font-icon-banmedica';
+    src:  url('./assets/fonts/font-icon-banmedica/icomoon.eot?3kpdgn');
+    src:  url('./assets/fonts/font-icon-banmedica/icomoon.eot?3kpdgn#iefix') format('embedded-opentype'),
+        url('./assets/fonts/font-icon-banmedica/icomoon.ttf?3kpdgn') format('truetype'),
+        url('./assets/fonts/font-icon-banmedica/icomoon.woff?3kpdgn') format('woff'),
+        url('./assets/fonts/font-icon-banmedica/icomoon.svg?3kpdgn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-banmed-"], [class*=" icon-banmed-"], [name^="icon-banmed-"], [name*=" icon-banmed-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'font-icon-banmedica' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-banmed-icon-login:before, *[name="icon-banmed-icon-login"]:before {
+    content: "\e900";
+}

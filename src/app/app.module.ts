@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { StepsComponent } from './components/steps/steps.component';
+import { LogoComponent } from './micro-components/logo/logo.component';
+import { BanmedInputComponent } from './micro-components/banmed-input/banmed-input.component';
 
 const appRoutes: Routes = [
   // { path: 'home', component: HomeComponent },
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    StepsComponent
+    StepsComponent,
+    LogoComponent,
+    BanmedInputComponent
   ],
   imports: [
     BrowserModule,
