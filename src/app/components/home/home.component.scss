@@ -8,10 +8,29 @@
         size: cover;
         position: center;
     }
+    .icon-banmed-icon-login-cont {
+        top: 24px;
+        right: 24px;
+    }
+    & > [bg-colorBlackTran-3] {
+        height: 100%;
+    }
     .home-cont {
         max-height: 100vh;
+        height: calc(100% - 80px);
     }
     &, .home-cont {
         overflow: hidden;
+    }
+    .home-subtitle {
+        width: 280px;
+    }
+    .home-banmed-breadcrumb-reference-cont {
+        width: calc(100% + (33% - 60px) );
+        right: 0px;
+        .home-banmed-breadcrumb-reference {
+            width: calc(25% + 45px) !important;
+            text-align: right;
+        }
     }
 }

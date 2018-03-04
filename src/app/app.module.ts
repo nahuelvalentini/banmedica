@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { StepsComponent } from './components/steps/steps.component';
 import { LogoComponent } from './micro-components/logo/logo.component';
 import { BanmedInput1Component } from './micro-components/banmed-input-1/banmed-input-1.component';
+import { BanmedBreadcrumbsComponent } from './micro-components/banmed-breadcrumbs/banmed-breadcrumbs.component';
 
 const appRoutes: Routes = [
   // { path: 'home', component: HomeComponent },
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     HomeComponent,
     StepsComponent,
     LogoComponent,
-    BanmedInput1Component
+    BanmedInput1Component,
+    BanmedBreadcrumbsComponent
   ],
   imports: [
     BrowserModule,

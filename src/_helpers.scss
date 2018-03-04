@@ -123,6 +123,33 @@ $listTxtColor:  map-keys($mycolors);
 //  }
 // }
 
+.text-weight-05 {
+  font-family: 'latothin';
+}
+.text-weight-1 {
+  font-family: 'latoextralight';
+}
+.text-weight-2 {
+  font-family: 'latolight';
+}
+.text-weight-3 {
+  font-family: 'latoregular';
+}
+.text-weight-35 {
+  font-family: 'latomedium';
+}
+.text-weight-4 {
+  font-family: 'latosemibold';
+}
+.text-weight-45 {
+  font-family: 'latobold';
+}
+.text-weight-5 {
+  font-family: 'latoextrabold';
+}
+.text-weight-55 {
+  font-family: 'latoblack';
+}
 
 *[text-upper] {
   text-transform: uppercase;

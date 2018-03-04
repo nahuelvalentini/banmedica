@@ -1,18 +1,15 @@
 .input-comp-1-cont-general {
     .input-comp-1-cont {
+        height: 58px;
         .input-1-cont {
             .label-input-1 {
-                top: 0px;
+                top: -5px;
                 left: 0px;  
                 pointer-events: none;
-                @keyframes onfocus {
-                    from {transform:translateY(0px) scale(1,1);}
-                    to {transform:translateY(-12px) translateX(-2px) scale(0.8,0.8);}
-                }
+                font-size: 22px;
                 &.onfocus {
-                    animation-name: onfocus;
-                    animation-duration: 300ms;
-                    animation-fill-mode: forwards;
+                    top: -13px;
+                    font-size: 13px;
                 }
             }
             .input-1 {
@@ -23,6 +20,9 @@
                 border-style: none;
                 outline: none;
                 outline-offset: 0px;
+                text-transform: uppercase;
+                width: 100%;
+                margin-top: 6px;
             }
         }
     }

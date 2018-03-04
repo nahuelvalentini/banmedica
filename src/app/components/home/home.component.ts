@@ -6,7 +6,7 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  dataForInput: {} = { type: 'text', model: '', focus: false, label: 'es el'};
+  dataForInput: {} = { type: 'text', model: '', focus: false, label: 'Es el título'};
   constructor() {
   }
   ngOnInit() {

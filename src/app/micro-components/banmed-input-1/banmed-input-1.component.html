@@ -1,8 +1,8 @@
 <span class="input-comp-1-cont-general">
-  <div class="input-comp-1-cont" border-radius-6 border-size-1 border-color-white padding-7 border>
-    <span class="input-1-cont" position-relative>
-      <span position-absolute class="label-input-1" [ngClass]="{onfocus: data.focus || data.model.length > 0}" text-size-22>{{data.label}}</span>
-      <input class="input-1" [attr.type]="data.type" [(ngModel)]="data.model" (focus)="data.focus = true" (focusout)="data.focus = false" bg-transparent-0 text-size-22>
+  <div class="input-comp-1-cont pt-3 pb-2 px-3" border-radius-6 border-size-1 border-color-white  border>
+    <span class="input-1-cont" position-relative display-block>
+      <span class="label-input-1 text-weight-2" [ngClass]="{onfocus: data.focus || data.model.length > 0}" position-absolute text-white transition-1>{{data.label}}</span>
+      <input class="input-1 text-weight-2" [attr.type]="data.type" [(ngModel)]="data.model" (focus)="data.focus = true" (focusout)="data.focus = false" bg-transparent-0 text-size-19 text-white>
     </span>
   </div>
 </span>

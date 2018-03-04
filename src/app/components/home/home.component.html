@@ -1,29 +1,53 @@
-<div class="container-fluid home-general-contfld">
-  <div class="container home-cont" bg-colorBlackTran-2>
-    <p>lorem</p>
-    <p>lorem</p>
-    <app-logo [chroma]="'baw'"></app-logo>
+<div class="container-fluid home-general-contfld p-0" position-relative>
+  <div class="icon-banmed-icon-login-cont" position-absolute>
+    <span name="icon-banmed-icon-login" text-white text-size-30></span>
+
+  </div>
     
-    <p>lorem</p>
-    <span name="icon-banmed-icon-login" text-test text-size-30></span>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <app-banmed-input-1 [data]="dataForInput"></app-banmed-input-1>
-    <app-banmed-input-1 [data]="dataForInput"></app-banmed-input-1>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
-    <p>lorem</p>
+  <div bg-colorBlackTran-3 img-responsive>
+    <div class="container home-cont d-flex flex-column justify-content-between pb-5">
+        <div class="home-top-zone d-flex justify-content-between">
+          <span class="pt-2">
+            <app-logo class="mt-5" [chroma]="'baw'" display-block></app-logo>
+            <h2 class="home-subtitle text-weight-2 mt-4" text-white >Armar tu plan será 
+            más fácil que 
+            comprar un vuelo 
+            ¡Y sin sorpresas!</h2>
+          </span>
+          <div class="col-md-5 pt-4 pl-0 pr-0" position-relative>
+            <app-banmed-breadcrumbs class="pt-5 mt-5 d-block" position-relative></app-banmed-breadcrumbs>
+            <div class="home-banmed-breadcrumb-reference-cont d-flex mt-3 text-weight-2" text-white img-responsive position-absolute>
+              <div class="home-banmed-breadcrumb-reference pl-3"><p>
+                  Ingresa <br>
+                  tus datos
+              </p></div>
+              <div class="home-banmed-breadcrumb-reference pl-3"><p>
+                  Selecciona 
+                  clínicas y
+                  coberturas
+              </p></div>
+              <div class="home-banmed-breadcrumb-reference pl-3"><p>
+                  Agrega 
+                  productos 
+                  adicionales
+              </p></div>
+              <div class="home-banmed-breadcrumb-reference pl-3"><p>
+                  Resumen 
+                  de tu plan
+              </p></div>
+            </div>
+          </div> 
+        </div>
+        <div class="home-middle-zone">
+          <span class="text-weight-2 d-block pb-2" text-white>TUS DATOS</span>
+          <app-banmed-input-1 class="col-md-5 d-block px-0" [data]="dataForInput"  ></app-banmed-input-1>
+        </div>
+
+        <div class="home-bottom-zone">
+
+          <p>lorem</p>
+        </div>
+
+    </div>
   </div>
 </div>
