@@ -45,6 +45,9 @@
   visibility: hidden;
   opacity: 0;
 }
+*[o-hidden] {
+  overflow: hidden;
+}
 .no-events, *[no-events] {
   pointer-events: none !important;
 }

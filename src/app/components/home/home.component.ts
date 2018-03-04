@@ -6,18 +6,28 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  dataForName: {};
-  dataForAge: {};
-  dataForSlary: {};
-  gender: string;
-  childbed: boolean;
+  user: {
+    id: number,
+    dataForName: {};
+    dataForAge: {};
+    dataForSlary: {};
+    gender: string;
+    childbed: boolean;
+    beneficiaryToAdd: {};
+    beneficiaries: {}[];
+  };
 
   constructor() {
-    this.dataForName = { type: 'text', model: '', focus: false, label: 'Nombre'};
-    this.dataForAge = { type: 'text', model: '', focus: false, label: 'Edad'};
-    this.dataForSlary = { type: 'text', model: '', focus: false, label: 'Sueldo imponible'};
-    this.gender = '';
-    this.childbed = false;
+    this.user = {
+      id: 0,
+      dataForName: { type: 'text', model: '', focus: false, label: 'Nombre'},
+      dataForAge: { type: 'text', model: '', focus: false, label: 'Edad'},
+      dataForSlary: { type: 'text', model: '', focus: false, label: 'Sueldo imponible'},
+      gender: '',
+      childbed: false,
+      beneficiaryToAdd: { dataForAge: { type: 'text', model: '', focus: false, label: 'Edad'} },
+      beneficiaries: [{ id: 0, dataForAge: { type: 'text', model: '', focus: false, label: 'Edad'}, gender: ''}]
+    };
   }
 
   ngOnInit() {

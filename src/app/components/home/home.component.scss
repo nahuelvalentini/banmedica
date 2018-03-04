@@ -8,6 +8,9 @@
         size: cover;
         position: center;
     }
+    *[height-el-gen-home] {
+        height: 58px;
+    }
     .icon-banmed-icon-login-cont {
         top: 24px;
         right: 24px;
@@ -18,9 +21,6 @@
     .home-cont {
         max-height: 100vh;
         height: calc(100% - 80px);
-    }
-    &, .home-cont {
-        overflow: hidden;
     }
     .home-subtitle {
         width: 280px;

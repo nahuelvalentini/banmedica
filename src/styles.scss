@@ -190,6 +190,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-banmed-icon-plus:before, *[name="icon-banmed-icon-plus"]:before  {
+    content: "\e908";
+}
+.icon-banmed-icon-speaker:before, *[name="icon-banmed-icon-speaker"]:before  {
+    content: "\e907";
+}
 .icon-banmed-icon-woman:before, *[name="icon-banmed-icon-woman"]:before {
     content: "\e901";
 }
