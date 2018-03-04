@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import './variables';
 @import './helpers';
 
@@ -9,8 +9,7 @@
             url('./assets/fonts/lato/lato-black-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-  
-  }
+    }
   
   @font-face {
     font-family: 'latoblack_italic';
@@ -191,6 +190,24 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-banmed-icon-woman:before, *[name="icon-banmed-icon-woman"]:before {
+    content: "\e901";
+}
+.icon-banmed-icon-man:before, *[name="icon-banmed-icon-man"]:before {
+    content: "\e902";
+}
+.icon-banmed-icon-close:before, *[name="icon-banmed-icon-close"]:before {
+    content: "\e903";
+}
+.icon-banmed-icon-person:before, *[name="icon-banmed-icon-person"]:before {
+    content: "\e904";
+}
+.icon-banmed-icon-chat:before, *[name="icon-banmed-icon-chat"]:before {
+    content: "\e905";
+}
+.icon-banmed-icon-airplane:before, *[name="icon-banmed-icon-airplane"]:before {
+    content: "\e906";
+}
 .icon-banmed-icon-login:before, *[name="icon-banmed-icon-login"]:before {
     content: "\e900";
 }

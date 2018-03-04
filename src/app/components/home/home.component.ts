@@ -6,9 +6,18 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  dataForInput: {} = { type: 'text', model: '', focus: false, label: 'Es el título'};
+  dataForName: {};
+  dataForAge: {};
+  dataForSlary: {};
+  gender: string;
+
   constructor() {
+    this.dataForName = { type: 'text', model: '', focus: false, label: 'Nombre'};
+    this.dataForAge = { type: 'text', model: '', focus: false, label: 'Edad'};
+    this.dataForSlary = { type: 'text', model: '', focus: false, label: 'Sueldo imponible'};
+    this.gender = '';
   }
+
   ngOnInit() {
   }
 

@@ -33,4 +33,21 @@
             text-align: right;
         }
     }
+    .home-buttons-gender-cont {
+        overflow: hidden;
+        height: 58px;
+    }
+    .home-middle-zone-cont {
+        .home-middle-zone {
+            .home-buttons-gender-cont {
+                height: 100%;
+            }
+            .home-field-salary {
+                app-banmed-input-1 {
+                    width: calc(100% - 48px);
+                }
+                
+            }
+        }
+    }
 }

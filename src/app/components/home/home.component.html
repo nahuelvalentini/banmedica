@@ -1,7 +1,6 @@
 <div class="container-fluid home-general-contfld p-0" position-relative>
   <div class="icon-banmed-icon-login-cont" position-absolute>
     <span name="icon-banmed-icon-login" text-white text-size-30></span>
-
   </div>
     
   <div bg-colorBlackTran-3 img-responsive>
@@ -38,9 +37,37 @@
             </div>
           </div> 
         </div>
-        <div class="home-middle-zone">
-          <span class="text-weight-2 d-block pb-2" text-white>TUS DATOS</span>
-          <app-banmed-input-1 class="col-md-5 d-block px-0" [data]="dataForInput"  ></app-banmed-input-1>
+
+        <div class="home-middle-zone-cont">
+          <span class="text-weight-2 d-block pb-2 glyphicon glyphicon-euro" text-white>TUS DATOS</span>
+          <div class="home-middle-zone d-flex">
+            <div class="col-md-4 pr-1 pl-0 d-block">
+              <app-banmed-input-1 class="d-block px-0" [data]="dataForName"  ></app-banmed-input-1>
+            </div>
+            <div class="col-md-3 px-2 d-block">
+              <div class="home-buttons-gender-cont cursor-pointer d-flex " border-color-white border-size-1 border-radius-6>
+                <div class="col-md-6 px-2 d-flex justify-content-around align-items-center text-weight-2" (click)="gender = 'man'" full-height border-color-white border-size-r-1 transition-1 text-white [attr.bg-blue-1]="gender == 'man' ? true : null"><span text-size-19>Hombre</span><span name="icon-banmed-icon-man" text-size-30></span></div>
+                <div class="col-md-6 px-2 d-flex justify-content-around align-items-center text-weight-2" (click)="gender = 'woman'" full-height transition-1 text-white [attr.bg-blue-1]="gender == 'woman' ? true : null"><span text-size-19>Mujer</span><span name="icon-banmed-icon-woman" text-size-30></span></div>
+              </div>
+            </div>
+            <div class="col-md-1 px-1 d-block">
+              <app-banmed-input-1 class="d-block px-0" [data]="dataForAge"  ></app-banmed-input-1>
+            </div>
+            <div class="col-md-4 px-2 d-flex align-items-center home-field-salary">
+              <app-banmed-input-1 class="d-flex px-0" [data]="dataForSlary"></app-banmed-input-1>
+              <div class="ml-2 d-flex justify-content-around align-items-center" sq-40 border-radius-circle bg-white text-blue-1 text-size-20>?</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 pr-2 pl-0 mt-3 d-block">
+            <div class="home-buttons-gender-cont cursor-pointer d-flex" border-color-white border-size-1 border-radius-6>
+              <div class="col-md-12 px-3 d-flex justify-content-between align-items-center text-weight-2" full-height transition-1 text-white>
+                <span text-size-19>Selecciona Región</span>
+                <span class="mb-2"><i class="fas fa-sort-down" text-size-30></i></span>
+              </div>
+            </div>
+          </div>
+          
         </div>
 
         <div class="home-bottom-zone">
