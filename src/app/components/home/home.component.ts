@@ -10,12 +10,14 @@ export class HomeComponent implements OnInit {
   dataForAge: {};
   dataForSlary: {};
   gender: string;
+  childbed: boolean;
 
   constructor() {
     this.dataForName = { type: 'text', model: '', focus: false, label: 'Nombre'};
     this.dataForAge = { type: 'text', model: '', focus: false, label: 'Edad'};
     this.dataForSlary = { type: 'text', model: '', focus: false, label: 'Sueldo imponible'};
     this.gender = '';
+    this.childbed = false;
   }
 
   ngOnInit() {

@@ -38,7 +38,7 @@
         height: 58px;
     }
     .home-middle-zone-cont {
-        .home-middle-zone {
+        .home-middle-zone-1 {
             .home-buttons-gender-cont {
                 height: 100%;
             }
@@ -49,5 +49,19 @@
                 
             }
         }
+        .home-middle-zone-2 {
+            .banmed-switch-onoff-cont {
+                .banmed-switch-onoff-circle {
+                    &.off {
+                        right: unset;
+                        left: 8px;
+                    }
+                    &.on {
+                        left: 53px;
+                    }
+                }
+            }
+        } 
+
     }
 }

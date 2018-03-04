@@ -45,10 +45,13 @@
   visibility: hidden;
   opacity: 0;
 }
-.no-events, [no-events] {
+.no-events, *[no-events] {
   pointer-events: none !important;
 }
-.cursor-pointer {
+*[no-select] {
+  user-select: none;
+}
+.cursor-pointer, *[cursor-pointer] {
   cursor: pointer;
 }
 // Cuadrados
@@ -344,17 +347,17 @@ $listBorderColor: map-keys($mycolors);
 } 
 // Border-radius
 
-@for $i from 0 through 16 {
+@for $i from 0 through 40 {
   *[border-radius-#{$i}] { 
     border-radius: #{$i}px !important;
   }
 }
-@for $i from 0 through 16 {
+@for $i from 0 through 40 {
   *[border-radius-tl-tr-#{$i}] { 
     border-radius: #{$i}px #{$i}px 0px 0px !important;
   }
 }
-@for $i from 0 through 16 {
+@for $i from 0 through 40 {
   *[border-radius-bl-br-#{$i}] {
     border-radius: 0px 0px #{$i}px #{$i}px !important;
   }
