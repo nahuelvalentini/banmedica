@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
     id: number,
     dataForName: {};
     dataForAge: {};
-    dataForSlary: {};
+    dataForSalary: {};
     gender: string;
     childbed: boolean;
     beneficiaryToAdd: {};
@@ -22,15 +22,22 @@ export class HomeComponent implements OnInit {
       id: 0,
       dataForName: { type: 'text', model: '', focus: false, label: 'Nombre'},
       dataForAge: { type: 'text', model: '', focus: false, label: 'Edad'},
-      dataForSlary: { type: 'text', model: '', focus: false, label: 'Sueldo imponible'},
+      dataForSalary: { type: 'text', model: '', focus: false, label: 'Sueldo imponible'},
       gender: '',
       childbed: false,
-      beneficiaryToAdd: { dataForAge: { type: 'text', model: '', focus: false, label: 'Edad'} },
-      beneficiaries: [{ id: 0, dataForAge: { type: 'text', model: '', focus: false, label: 'Edad'}, gender: ''}]
+      beneficiaryToAdd: { dataForAge: { type: 'text', model: '23', focus: false, label: 'Edad'} },
+      beneficiaries: [{ id: 0, dataForAge: { type: 'text', model: '28', focus: false, label: 'Edad'}, gender: 'man'}]
     };
   }
 
   ngOnInit() {
+  }
+  removeBeneficiary(index) {
+    this.user.beneficiaries.splice(index, 1);
+  }
+  addBeneficiary(beneficiary) {
+    const newBeneficiary = JSON.parse(JSON.stringify(beneficiary));
+    this.user.beneficiaries.unshift(newBeneficiary);
   }
 
 }

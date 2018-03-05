@@ -2,5 +2,20 @@
     hr {
         width: calc(33.3333% - 60px );
     }
-    
+    .banmed-breadcrumbs-airplane {
+        top: 0px;
+        left: 0px;
+        &.first {
+            left: 0px;
+        }
+        &.second {
+            left: calc(33.3333% - 15px );
+        }
+        &.third {
+            left: calc(66.6666% - 30px );
+        }
+        &.fourth {
+            left: calc(100% - 46px );
+        }
+    }    
 }
